@@ -37,12 +37,12 @@ st.subheader("Team: to the moon")
 st.write("We developed a novel downstream task for land cover classification, utilizing HLS data from NASA Earthdata for various locations such as New York (USA), California (USA), Mumbai (India), Delhi (India), and Sundarbans (India). We manually annotated this geospatial data and used it to fine-tune a pre-trained model, Prithvi-100m, which served as our backbone. Our model achieved accurate land cover segmentation with minimal labeled data. Additionally, we applied our solution to assess landscape change detection in cities like New York and Mumbai, highlighting the rapid urban expansion. This platform showcases our results, provides intuitive before-and-after images of landscape changes over time, and allows researchers to upload their datasets for easy fine-tuning on Prithvi-100m. Our solution not only advances geospatial AI models but also empowers researchers to efficiently contribute to this field, making it an essential contribution to disaster response planning, environmental monitoring, and geospatial analytics.")
 
 col1, col2 = st.columns(2)
-        # Original Image
-        with col1:
-                st.image("original_image.jpg", caption="Original Image", use_column_width=True)
-        # Manually Annotated Segmented Mask
-        with col2:
-            st.image("segmented_mask.jpg", caption="Manually Annotated Segmentation Mask", use_column_width=True)
+# Original Image
+with col1:
+        st.image("original_image.jpg", caption="Original Image", use_column_width=True)
+# Manually Annotated Segmented Mask
+with col2:
+        st.image("segmented_mask.jpg", caption="Manually Annotated Segmentation Mask", use_column_width=True)
 
 # Description of the solution
 #st.write("Our solution solves the following problems:")
@@ -93,7 +93,7 @@ def extract_zip(zip_file):
         zip_ref.extractall("uploaded_data")
 
 # Allow users to upload a zip file
-uploaded_zip = st.file_uploader("Upload a ZIP file containing data:", type=["zip"])
+uploaded_zip = st.file_uploader("Upload a ZIP file containing dataset:", type=["zip"])
 
 if uploaded_zip:
     # Check if a file is uploaded
