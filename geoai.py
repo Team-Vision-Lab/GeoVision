@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit_image_comparison import image_comparison
 import rasterio
-
+import os
 
 # def geotiff_to_jpg(tif_filename):
 #     with rasterio.open(tif_filename) as infile:
