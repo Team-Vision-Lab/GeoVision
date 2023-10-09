@@ -62,10 +62,10 @@ dataset = rasterio.open('HLS.S30.T43QBB.2021352T054241.v2.0.B02.tif')
 
 
 image_comparison(
-    img1="image1.jpg",
-    img2="image2.jpg",
-    label1="text1",
-    label2="text1",
+    img1="2017.jpg",
+    img2="2023.jpg",
+    label1="2017 Mumbai",
+    label2="2023 Mumbai",
     width=700,
     starting_position=50,
     show_labels=True,
