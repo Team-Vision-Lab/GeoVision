@@ -29,21 +29,21 @@ st.set_page_config(page_title="Image-Comparison Example", layout="centered")
 st.title("Hackathon Solution Showcase")
 
 # Subtitle
-st.subheader("Welcome to our Hackathon Solution Showcase")
+st.subheader("Welcome to our Hackathon Solution Showcase for the NASA SpaceApps Hackathon")
 
 # Description
-st.write("This is where we present our innovative solution from the hackathon.")
+st.write("We developed a novel downstream task for land cover classification, utilizing HLS data from NASA Earthdata for various locations such as New York (USA), California (USA), Mumbai (India), Delhi (India), and Sundarbans (India). We manually annotated this geospatial data and used it to fine-tune a pre-trained model, Prithvi-100m, which served as our backbone. Our model achieved accurate land cover segmentation with minimal labeled data. Additionally, we applied our solution to assess landscape change detection in cities like New York and Mumbai, highlighting the rapid urban expansion. This platform showcases our results, provides intuitive before-and-after images of landscape changes over time, and allows researchers to upload their datasets for easy fine-tuning on Prithvi-100m. Our solution not only advances geospatial AI models but also empowers researchers to efficiently contribute to this field, making it an essential contribution to disaster response planning, environmental monitoring, and geospatial analytics.")
 
 # Add an image to showcase your solution (replace 'solution.png' with your image file)
 st.image("image1.jpg", caption="Our Hackathon Solution", use_column_width=True)
 
 # Description of the solution
-st.write("Our solution solves the following problems:")
+#st.write("Our solution solves the following problems:")
 
 # List of problems solved
-st.write("1. Problem 1 description here.")
-st.write("2. Problem 2 description here.")
-st.write("3. Problem 3 description here.")
+#st.write("1. Problem 1 description here.")
+#st.write("2. Problem 2 description here.")
+#st.write("3. Problem 3 description here.")
 
 
 
@@ -52,9 +52,9 @@ st.subheader("Key Features")
 st.write("Our solution comes with the following key features:")
 
 # List of key features
-st.write("- Feature 1 description here.")
-st.write("- Feature 2 description here.")
-st.write("- Feature 3 description here.")
+st.write("- Prithvi-100m foundational model fine-tuned for land cover classification")
+st.write("- The platform allows users to observe before-and-after changes")
+st.write("- The platform allows researchers to upload their annotated dataset and fine-tune the model achieving high accuracy with less data and time")
 
 # convert a geotiff to jpg
 dataset = rasterio.open('HLS.S30.T43QBB.2021352T054241.v2.0.B02.tif')
