@@ -81,7 +81,24 @@ st.markdown(
     ,
     unsafe_allow_html=True,
 )
+def extract_zip(zip_file):
+    with zipfile.ZipFile(zip_file, 'r') as zip_ref:
+        zip_ref.extractall("uploaded_data")
 
+# Allow users to upload a zip file
+uploaded_zip = st.file_uploader("Upload a ZIP file containing data:", type=["zip"])
+
+if uploaded_zip:
+    # Check if a file is uploaded
+    if st.button("Extract and Process"):
+        st.write("Extracting the uploaded ZIP file...")
+        extract_zip(uploaded_zip)
+        st.write("ZIP file extracted successfully!")
+
+        # Now you can access the extracted data and process it further as needed
+        # For example, list the extracted files
+        extracted_files = os.listdir("uploaded_data")
+        st.write("Extracted files:", extracted_files)
 
 
 
