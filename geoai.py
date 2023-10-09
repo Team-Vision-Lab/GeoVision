@@ -23,13 +23,15 @@ import os
         #     dst.write(raster)
 
 # set page config
-st.set_page_config(page_title="Image-Comparison Example", layout="centered")
+st.set_page_config(page_title="GeoVision", layout="centered")
 
 # Title
-st.title("Hackathon Solution Showcase")
+st.title("Geovision Showcase")
 
 # Subtitle
 st.subheader("Welcome to our Hackathon Solution Showcase for the NASA SpaceApps Hackathon")
+
+st.subheader("Team: to the moon")
 
 # Description
 st.write("We developed a novel downstream task for land cover classification, utilizing HLS data from NASA Earthdata for various locations such as New York (USA), California (USA), Mumbai (India), Delhi (India), and Sundarbans (India). We manually annotated this geospatial data and used it to fine-tune a pre-trained model, Prithvi-100m, which served as our backbone. Our model achieved accurate land cover segmentation with minimal labeled data. Additionally, we applied our solution to assess landscape change detection in cities like New York and Mumbai, highlighting the rapid urban expansion. This platform showcases our results, provides intuitive before-and-after images of landscape changes over time, and allows researchers to upload their datasets for easy fine-tuning on Prithvi-100m. Our solution not only advances geospatial AI models but also empowers researchers to efficiently contribute to this field, making it an essential contribution to disaster response planning, environmental monitoring, and geospatial analytics.")
