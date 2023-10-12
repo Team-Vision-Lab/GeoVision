@@ -191,14 +191,12 @@ for img in annotation_json:
         count_file += 1
 
 
-
-
 # download button to the json file
 if count_file == count_label:
     st.download_button(label='Download Annotation JSON', data=json.dumps(annotation_json), file_name='annotation.json', mime='application/json')
-    for nimg in range(st.session_state['num_page']):
-        # display the image first
-        st.image(image_path_list[nimg])
+    # space
+    st.write('')
+    st.write('Output images generated ')
 
 
 

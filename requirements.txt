@@ -1,5 +1,5 @@
 streamlit-image-comparison
 streamlit
 rasterio
-streamlit_image_annotation
+streamlit-image-annotation
 opencv-python
