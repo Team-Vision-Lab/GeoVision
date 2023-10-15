@@ -2,5 +2,5 @@ streamlit-image-comparison
 streamlit
 rasterio
 streamlit-image-annotation
-opencv-contrib-python
+opencv-python-headless
 matplotlib
